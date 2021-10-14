@@ -1,0 +1,805 @@
+@import "vars"
+@import "fonts"
+
+//start global style
+body 
+	font-family: $main-font
+	background: #000
+	font-size: 15px
+	color: #fff
+	font-weight: 400
+a,
+a:hover 
+	text-decoration: none
+p 
+	margin-bottom: 0
+.container-fluid 
+	width: 1360px
+	max-width: 98vw
+.wrapper 
+	width: 938px
+	max-width: 100%
+	margin: 0 auto
+.button
+	background: linear-gradient(180deg, #F4176A 0%, rgba(255, 3, 98, 0) 100%), #C2034B
+	width: 212px 
+	height: 42px
+	display: flex 
+	justify-content: center 
+	align-items: center
+	border-radius: 10px
+	font-size: 20px 
+	font-weight: 900
+	cursor: pointer
+	color: #fff
+	border: none
+	outline: none
+.button:focus 
+	outline: none
+.button:hover 
+	color: #fff
+.section
+	padding: 80px 0
+.center 
+	text-align: center
+.h2 
+	font-size: 35px
+	font-weight: 900
+	margin-bottom: 0
+.button-grey
+	position: relative
+	width: 212px
+	height: 42px
+	background: linear-gradient(103.82deg, #0A8DDD 1.01%, #F5337C 97.83%)
+	padding: 1.5px 1.5px
+	border-radius: 10px
+	cursor: pointer
+	font-size: 20px
+.button-content
+	background: #353A40
+	color: white
+	border-radius: 10px
+	height: 100%
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+//end global style
+
+//start header style
+.header 
+	padding: 18px 0
+	position: absolute
+	width: 100%
+	top: 0 
+	left: 0
+	z-index: 98
+	.container-fluid 
+		display: flex
+		justify-content: space-between
+		align-items: center
+.logo 
+	a 
+		display: flex
+		align-items: center
+	img 
+		display: block
+.logo-image 
+	margin-right: 20px
+.header__menu
+	display: flex
+	align-items: center
+	font-size: 20px
+	font-weight: 900
+	ul 
+		margin: 0
+		padding: 0
+		list-style: none
+.header__menu-link
+	display: block
+	color: #fff
+	margin-right: 40px
+.header__menu-link:hover 
+	color: #fff
+.login-button.button-grey
+	width: 160px 
+	height: 36px
+.header__menu-wrapper
+	display: flex 
+	align-items: center
+//end header style
+
+//start slick style
+.slick-slider
+	position: relative
+	display: block
+	box-sizing: border-box
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	-webkit-touch-callout: none
+	-khtml-user-select: none
+	-ms-touch-action: pan-y
+	touch-action: pan-y
+	-webkit-tap-highlight-color: transparent
+.slick-list
+	position: relative
+	display: block
+	overflow: hidden
+	margin: 0
+	padding: 0
+.slick-list:focus
+	outline: none
+.slick-list.dragging
+	cursor: pointer
+	cursor: hand
+.slick-slider .slick-track,
+.slick-slider .slick-list
+	-webkit-transform: translate3d(0, 0, 0)
+	-moz-transform: translate3d(0, 0, 0)
+	-ms-transform: translate3d(0, 0, 0)
+	-o-transform: translate3d(0, 0, 0)
+	transform: translate3d(0, 0, 0)
+.slick-track
+	position: relative
+	top: 0
+	left: 0
+	display: block
+	margin-left: auto
+	margin-right: auto
+.slick-track:before,
+.slick-track:after
+	display: table
+	content: ''
+.slick-track:after
+	clear: both
+.slick-loading .slick-track
+	visibility: hidden
+.slick-slide
+	display: none
+	float: left
+	height: 100%
+	min-height: 1px
+[dir='rtl'] .slick-slide
+	float: right
+.slick-slide img
+	display: block
+.slick-slide.slick-loading img
+	display: none
+.slick-slide.dragging img
+	pointer-events: none
+.slick-initialized .slick-slide
+	display: block
+.slick-loading .slick-slide
+	visibility: hidden
+.slick-vertical .slick-slide
+	display: block
+	height: auto
+	border: 1px solid transparent
+.slick-arrow.slick-hidden
+	display: none
+//end slick style
+
+//start main-screen style
+.main-screen 
+	background: linear-gradient(130.1deg, #34393F -13.13%, #000000 38.13%) 
+.slider__item
+	padding-top: 272px
+	padding-bottom: 60px
+.slider__item--first
+	background: url('../img/banner1.png')
+	background-repeat: no-repeat
+	background-position: right bottom
+.slider__item--second
+	background: url('../img/banner2.png')
+	background-repeat: no-repeat
+	background-position: right bottom
+.main-screen__content
+	width: 332px
+	max-width: 100%
+.main-screen__text
+	font-size: 20px
+	margin-bottom: 40px
+	margin-top: 20px
+.main-screen__content-wrapper
+	display: flex
+.main-screen__greeting
+	text-align: center
+	width: calc(100% - 332px)
+	padding-top: 260px
+	display: flex 
+	flex-direction: column
+	align-items: center
+	font-size: 35px 
+	line-height: 1.5
+	font-weight: 900
+	text-shadow: 0px -2px 8px rgba(0, 0, 0, 0.95)
+	span 
+		font-size: 16px
+	img 
+		display: block
+.slick-dots
+	display: flex
+	justify-content: center
+	transform: translateY(-200%)
+	margin-left: 0 
+	padding-left: 0
+	margin-bottom: 0
+	list-style: none
+	li 
+		button 
+			font-size: 0
+			border: none
+			background: transparent
+			width: 14px 
+			height: 14px 
+			border-radius: 50%
+			border: 1px solid #fff
+			margin: 0 5px
+			padding: 0
+		button:focus 
+			outline: none
+	.slick-active 
+		button 
+			background: #fff
+//end main screen style
+
+//start responsible-gambling style
+.responsible-gambling__wrapper
+	width: 760px 
+	max-width: 100%
+	margin: 0 auto
+	display: flex 
+	justify-content: space-between
+	align-items: center
+.responsible-gambling__link
+	display: block
+	margin-top: 40px
+//end responsible-gambling style
+
+//start download style
+.download
+	background: $primary-color
+	.container-fluid 
+		width: 1120px
+		max-width: 98vw
+.download__wrapper
+	display: flex 
+	justify-content: space-between
+	align-items: center
+.download__text
+	padding-top: 20px
+	padding-bottom: 40px
+	font-size: 18px
+	width: 439px 
+	max-width: 100%
+.download__buttons
+	display: flex
+	a 
+		margin-right: 20px
+		display: block
+.download__content
+	max-width: 100%
+
+//end download style
+
+//start video style
+.video-section 
+	background: #090909
+	overflow: hidden
+.video-section__wrapper
+	width: 938px
+	max-width: 100% 
+	margin: 0 auto
+	align-items: center
+iframe 
+	width: 100%
+	height: 552px
+	border-radius: 20px
+.video-slider__column
+	width: 78px	
+	margin-right: 20px
+.video-slider__buttons
+	width: 100% 
+	display: flex 
+	justify-content: space-between
+	margin-top: 25px
+.prev,
+.next 
+	cursor: pointer
+.video-slider-title
+	font-size: 22px
+.video-slider-wrapper
+	margin-top: 60px
+	display: flex
+.video-slider-content
+	width: calc(100% - 98px)
+.video-slider__item
+	padding: 5px
+.video-preview__img
+	img 
+		width: 100%
+.video-preview__content
+	padding: 23px 20px 20px 20px
+	background: #27292A
+	display: flex
+	justify-content: space-between
+.video-preview
+	border-radius: 10px
+	overflow: hidden
+	cursor: pointer
+.video-preview__title
+	font-size: 12px
+	font-weight: 600
+.video-preview__text
+	font-size: 10px	
+.video-prewiev__time
+	align-self: flex-end
+	color: #036FEE
+	font-size: 10px
+.video-slider
+	
+	.slick-slide
+		float: none
+		display: inline-block
+		vertical-align: bottom
+		padding: 0px 0px
+		transition: all 0.5s ease
+		height: auto
+		width: 170px
+		height: 186
+		padding: 5px
+	.slick-current
+		width: 330px
+		height: 260px
+		//transition: all 0.3s ease
+		height: auto
+		.video-preview__img
+			height: 173px
+			transition: all 0.5s ease
+
+
+.video-slider-wrapper
+	height: 260px
+.slick-track
+	transition: all 0.5s ease
+.video-preview__img
+	height: 86px
+	overflow: hidden
+.video-slider .slick-current .video-preview
+	background: linear-gradient(103.82deg, #0A8DDD 1.01%, #F5337C 97.83%)
+	padding: 1.5px 1.5px
+.video-preview__wrapper
+	overflow: hidden
+	border-radius: 10px
+//end video style
+
+//start get-started style
+.get-started__row
+	display: flex 
+	justify-content: space-between
+	align-items: center
+.get-startes__title
+	font-size: 32px
+	color: #036FEE
+	font-weight: 900
+.get-started__text
+	font-size: 28px
+	font-weight: 400
+.get-started__buttons
+	display: flex
+	.button-grey
+		margin-left: 20px
+
+//end get-started style
+
+//start footer style
+.footer 
+	padding-bottom: 40px
+	.container-fluid 
+		width: 1200px
+		max-width: 98vw
+.footer__row
+	display: flex 
+.footer__content
+	width: 100%
+.footer__menu 
+	width: 100%
+	display: flex
+.footer-menu__link
+	display: block 
+	margin-right: 78px
+	font-size: 18px
+	color: #fff
+	padding-bottom: 4px
+	position: relative
+	font-weight: 900
+.footer-menu__link:before 
+	content: ''
+	width: 0%
+	height: 2px 
+	background: #fff
+	display: block
+	position: absolute 
+	left: 0
+	bottom: 0
+	border-radius: 20px
+	transition: all 0.3s
+.footer-menu__link:hover
+	color: #fff
+.footer-menu__link:hover:before,
+.footer-menu__link.active:before 
+	width: 100%
+.footer__social
+	margin-top: 40px
+	display: flex 
+.footer__social-link
+	margin-right: 48px
+.footer__text
+	width: 900px 
+	max-width: 100% 
+	font-size: 12px
+	margin-bottom: 40px
+.footer__copy
+	font-size: 14px
+	font-family: $primary-font
+//end footer style
+
+//start cookies style
+.cookies
+	background: #27292A
+	border-radius: 35px 35px 0px 0px
+	position: fixed 
+	bottom: 0 
+	left: 0
+	width: 100%
+	padding: 76px 0
+	font-size: 15px
+	z-index: 97
+	.container-fluid 
+		width: 1200px
+		max-width: 98vw
+.cookies__content
+	width: 766px 
+	max-width: 100% 
+	display: flex
+	justify-content: space-between
+	align-items: center
+.cookies__link
+	font-weight: 700
+.cookies__text
+	width: 446px 
+	max-width: 100%
+	font-size: 15px
+.cookies__link
+	font-weight: 700 
+	color: #fff
+	text-decoration: underline
+.cookies__link:hover 
+	color: #fff
+	text-decoration: underline
+	
+.cookies__buttons
+	display: flex
+.cookies__button
+	margin-left: 40px
+	width: 106px 
+	height: 34px
+	font-size: 16px 
+	font-weight: 900
+	display: flex 
+	justify-content: center
+	align-items: center
+	border-radius: 10px
+	cursor: pointer
+.cookies__button--accept
+	background: linear-gradient(180deg, #F4176A 0%, rgba(255, 3, 98, 0) 100%), #C2034B
+.cookies__button--decline
+	background: #34393F
+	border: 1.5px solid #E20B5C
+	box-sizing: border-box
+//end cookies style
+
+//start modal style
+.modal-window
+	display: none
+	position: fixed 
+	top: 0 
+	left: 0 
+	width: 100%
+	height: 100% 
+	background: rgba(#27292A, 0.9)
+	z-index: 999
+	overflow-y: auto
+.modal__content
+	position: absolute 
+	top: 50% 
+	left: 50%
+	transform: translateX(-50%) translateY(-50%)
+	width: 908px 
+	max-width: 88.785vw
+	min-height: 526px
+	background: #000
+	background-image: url('../img/modal-img.png')
+	background-repeat: no-repeat
+	box-shadow: 2px 2px 18px #000000
+	border-radius: 20px
+	display: flex 
+	justify-content: flex-end
+	padding: 80px 40px
+.modal__content-wrapper
+	width: 442px
+	max-width: 100%
+	text-align: center
+.modal__title
+	font-size: 30px
+.modal__sub-title
+	font-size: 30px 
+	font-weight: 900
+.modal-buttons
+	width: 100% 
+	display: flex 
+	justify-content: space-between 
+	align-items: center
+	margin: 40px auto
+.modal__button
+	margin: 0 auto
+	margin-top: 40px
+.close 
+	position: absolute 
+	top: 20px 
+	right: 20px 
+	cursor: pointer
+//end modal style
+
+//start page main screen
+.page-main-screen
+	height: 312px
+	width: 100%
+.page-main-screen--how-to-play
+	background-image: url('../img/how-to-play-bg.png')
+	background-position: center 
+	background-repeat: no-repeat
+//end page main screen
+
+//start how to play style
+.how-to-play
+	background: #090909
+.how-to-play__item
+	font-size: 20px
+	padding-top: 40px
+	padding-bottom: 40px
+.how-to-play__item-text
+	margin-bottom: 40px
+.how-to-play__item-title
+	font-weight: 900
+.how-to-play__item:last-child 
+	padding-bottom: 0
+//end how to play style
+
+//start contact sctyle
+.page-main-screen--contact
+	background-image: url('../img/contact-bg.png')
+	background-repeat: no-repeat 
+	background-position: top center
+.contact-us 
+	background: #090909
+.contact-us__sub-title
+	padding-top: 40px 
+	padding-bottom: 40px
+	font-size: 20px
+.form 
+	font-size: 20px
+.input,
+.select,
+.textarea 
+	width: 100%
+	height: 46px
+	background: #27292A
+	margin-bottom: 24px
+	border: none 
+	border-radius: 10px
+	padding-left: 60px 
+	padding-right: 19px
+	color: #fff
+	outline: none
+
+.input::placeholder,
+.textarea::placeholder  
+	color: #C0C0C0
+.input:focus::placeholder, 
+.textarea:focus::placeholder
+	color: transparent
+.input,
+.select 
+	background-repeat: no-repeat
+	background-position: left 20px center
+.textarea 
+	height: 236px
+	padding: 20px
+.select
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+	cursor: pointer
+	margin-bottom: 0
+.select-wrapper
+	position: relative
+	margin-bottom: 24px
+.select-wrapper:before 
+	content: url('../img/down.svg')
+	position: absolute
+	right: 16px 
+	top: 50%
+	transform: translateY(-50%)
+	display: block
+.input--name
+	background-image: url('../img/user.svg')
+.input--mail
+	background-image: url('../img/mail.svg')
+.select
+	background-image: url('../img/msg.svg')
+.contact__items
+	display: flex
+	justify-content: space-between
+	font-size: 18px
+	color: #fff
+.contact-item
+	color: #fff
+	display: flex
+	align-items: center
+	img 
+		display: block 
+		margin-right: 10px
+.contact-item:hover
+	color: #fff
+.form__footer
+	width: 100%
+	justify-content: flex-end
+	display: flex
+	margin-top: 40px
+
+
+//end contact style
+
+//start thank-you modal 
+.modal-window--thank-you
+	.modal__content
+		width: 908px
+		min-height: 430px
+		align-items: center
+		background-image: url('../img/modal-img2.png')
+		padding-top: 40px 
+		padding-bottom: 40px
+.modal__text
+	font-size: 25px
+	margin-top: 40px
+.modal__icon
+	margin-bottom: 40px
+//end thank you modal
+
+//start download page style
+.download--page
+	background: #000
+	padding-top: 105px
+.download__sub-title
+	font-size: 32px
+.download-page-item
+	font-size: 20px
+.download-page-title
+	font-weight: 900
+.read-more 
+	font-size: 12px
+	padding-top: 20px 
+	padding-bottom: 20px
+	cursor: pointer
+.hide-text	
+	display: none
+.download-page__row
+	display: flex
+	justify-content: space-between
+
+	
+.download-page__info
+	padding-top: 20px
+	font-size: 15px
+.download-page__info-title
+	padding-bottom: 15px 
+	font-weight: 900
+.download-page__info-title
+	font-weight: 900
+.download-page__info-item
+	margin-bottom: 25px
+//end download page style
+
+//start sf style
+.page-main-screen--sf
+	background-image: url('../img/sf.png')
+	background-position: center
+	background-repeat: no-repeat
+.sf
+	background: #090909
+	.h2 
+		margin-bottom: 60px
+.sf__item
+	padding-bottom: 20px
+	font-size: 20px
+	p 
+		margin-bottom: 25px
+.sf-title
+	font-weight: 900
+.sf__item:last-child 
+	padding-bottom: 0		
+//end sf style
+
+//start faq style
+.page-main-screen--faq
+	background-image: url('../img/faq.png')
+	background-repeat: no-repeat 
+	background-position: center
+.faq 
+	background: #090909
+	.h2 
+		margin-bottom: 40px
+.faq__item
+	width: 100%
+	font-weight: 900 
+	font-size: 15px
+	margin-bottom: 20px
+	img 
+		padding-left: 10px
+.faq__header
+	background: #27292A
+	border-radius: 10px
+	display: flex 
+	justify-content: space-between 
+	align-items: center
+	padding: 13px 20px
+	cursor: pointer
+	transition: all 0.5s
+.faq__text
+	background: #353A40
+	border-radius: 0 0 10px 10px
+	padding: 20px 20px 47px 20px
+	display: none
+.faq__item.active
+	.faq__header
+		border-radius: 10px 10px 0px 0px
+		padding-bottom: 40px
+.faq__item:last-child 
+	margin-bottom: 0	
+//end faq style
+
+//start terms style
+.page-main-screen--terms
+	background: url('../img/terms.png')
+	background-repeat: no-repeat 
+	background-position: center
+.terms
+	background: #090909
+	font-size: 15px
+
+	p 
+		margin-bottom: 20px
+
+	ul 
+		padding-left: 20px
+	ul.decimal
+		list-style: decimal
+	.h2 
+		margin-bottom: 40px
+.title
+	font-weight: 700
+	margin-bottom: 20px
+.no-margin
+	margin-bottom: 0
+.page-main-screen--privacy
+	background: url('../img/privacy.png')
+	background-repeat: no-repeat 
+	background-position: center
+//end terms style
+@import "media"
+
+
+

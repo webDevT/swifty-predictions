@@ -1,0 +1,604 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1300px)
+	/**/
+	.download__img
+		max-width: 50%
+
+@media only screen and (max-width : 1200px)
+	/**/
+	.footer-menu__link
+		margin-right: 4vw
+	.footer__text
+		width: 70vw
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+
+	//start main screen style
+	.slider__item
+		background-size: 100%
+		background-position: top center
+		padding-top: 20vw
+	.main-screen__greeting
+		padding-top: 150px
+	//end main screen style
+
+	//start download style
+	.download__wrapper
+		flex-direction: column
+	.download__img
+		max-width: 100%
+		margin-bottom: 2.336vw
+		display: block
+		order: 1
+	.download__content
+		order: 2
+	//end download style
+
+	//start video style
+	.video-slider-wrapper
+		flex-direction: column
+		align-items: flex-start
+	.video-slider__buttons
+		display: none
+	.video-slider__column
+		width: 100%
+		margin-bottom: 5.607vw
+	.container-fluid--slider
+		padding-right: 0
+		padding-left: 15px
+		margin-left: 1vw
+		width: 100vw
+		max-width: 100vw
+
+	.video-slider-wrapper
+		width: 100%
+	.video-slider-content
+		width: 100%
+
+	.video-slider
+		.slick-slide 
+			width: 42.2vw !important
+			padding: 1.168vw
+		.slick-current
+			width: auto
+			height: auto
+			.video-preview__img 
+				height: auto
+	.video-preview__img 
+		height: auto
+		img
+			height: 27.804vw
+			width: auto
+	.video-slider-wrapper
+		height: auto
+	.video-preview__title
+		font-size: 2.804vw
+	.video-preview__text,
+	.video-prewiev__time
+		font-size: 2.336vw
+	.video-preview__content
+		padding-top: 4.673vw
+	//end video style
+
+	//start get started style
+	.get-started__row
+		flex-direction: column
+		align-items: flex-start
+	.get-started__buttons
+		margin-top: 40px
+	//end get started style
+
+	//start footer style
+	.footer__row
+		flex-direction: column
+		align-items: center
+	.footer__row
+		order: 1
+	.footer__content
+		order: 2
+	.footer-menu__link
+		padding: 12px 10px
+		margin-right: 0
+	.footer__menu
+		justify-content: space-around
+		flex-wrap: wrap
+	.footer__logo 
+		margin-bottom: 40px
+	.footer__text
+		width: 100% 
+		text-align: center
+	.footer__social
+		margin-bottom: 40px
+		justify-content: center
+	.footer__social-link
+		margin: 0 30px
+	//end footer style
+
+	//start modal style
+	.modal__content
+		background-image: none
+		top: 10vw
+		transform: translateX(-50%) translateY(0) 
+	.modal__content-wrapper
+		width: 100%
+	.modal-buttons
+		width: 444px
+		max-width: 100%
+	//end modal style
+
+	//start contact style
+	.contact__items
+		flex-direction: column
+	.contact-item
+		margin-bottom: 24px
+	.modal-window--thank-you
+		.modal__content 
+			background-image: none
+
+	//end contact style
+
+		
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+
+	.section 
+		padding: 9.346vw 0
+	//start header style
+	.header
+		padding: 5.607vw 0
+		.container-fluid
+			flex-direction: column
+	.logo 
+		order: 2
+	.header__menu 
+		display: none
+	.menu-btn 
+		cursor: pointer
+		align-self: flex-end
+		z-index: 999
+	.menu-row 
+		height: 0.467vw
+		width: 6.542vw
+		margin-bottom: 1.636vw
+		background: #fff
+		border-radius: 5vw
+		transition: all 0.5s
+	.menu-row:last-child 
+		margin-bottom: 0
+	.menu-btn.active 
+		.menu-row:last-child 
+			opacity: 0
+		.menu-row:nth-child(2)
+			transform: rotate(-45deg)
+		.menu-row:first-child
+			transform: rotate(45deg)
+			//margin-bottom: 0
+			position: relative
+			top: 2.1vw
+	.logo 
+		margin-top: 0vw
+		a 
+			flex-direction: column
+	.logo-image 
+		margin-bottom: 8.5px
+		margin-right: 0
+		width: 48.832vw
+	.logo-predictions
+		width: 48.832vw
+	.header__menu
+		text-align: right
+		background: #000
+		position: absolute
+		left: 0
+		top: 15.187vw
+		width: 100vw 
+		padding: 5.607vw
+		z-index: 99
+		box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.25)
+		background: #323334
+		border: 1px solid #000000
+		border-radius: 2.336vw
+	.login-button
+		background: transparent
+		height: auto 
+		width: 100%
+		margin-bottom: 4.206vw
+		font-size: 4.206vw
+		text-align: center
+		margin-right: 0
+		text-align: right
+		justify-content: flex-end
+		.button-content
+			background: transparent
+			justify-content: flex-end
+
+	.login-button.button-grey
+		width: 100%
+	.header__menu-link
+		margin-right: 0
+		margin-bottom: 0vw
+		font-size: 4.206vw
+	.header__menu-wrapper
+		display: flex
+		flex-direction: column-reverse
+		align-items: flex-end
+	.header--secondary
+		.container-fluid 
+			flex-direction: row
+			align-items: flex-start
+			.menu-btn 
+				order: 2
+		.logo a
+			flex-direction: row
+			align-items: center
+		.logo-image
+			width: 18.224vw
+			margin-bottom: 0
+		.logo-predictions
+			width: 32.710vw
+			margin-left: 2.804vw
+	//end header style
+
+	//start main screen style
+	.main-screen
+		.container-fluid 
+			max-width: 100%
+			padding-left: 0 
+			padding-right: 0
+	.main-screen__content 
+		img 
+			display: none
+	.main-screen__text
+		display: none
+	.main-screen__content-wrapper
+		flex-direction: column
+		align-items: center
+	.main-screen__content
+		order: 2
+		width: auto
+	.main-screen__greeting
+		padding-top: 0
+	.slider__item
+		padding-top: 100vw
+		background-size: 220vw
+		padding-bottom: 12vw
+	.main-screen__content
+		padding-top: 9.346vw
+	.main-screen__greeting-title
+		font-size: 6.542vw
+		span 
+			font-size: 3vw
+	.main-screen__greeting img
+		width: 85.981vw
+	//end main screen style
+
+	//start responsible-gambling style
+	.responsible-gambling__wrapper
+		flex-direction: column
+		padding-top: 3.738vw
+	.responsible-gambling__link
+		margin-top: 5.607vw
+	.responsible-gambling__link:nth-child(2)
+		order: 1
+		img 
+			max-width: 23.131vw
+	.responsible-gambling__link:nth-child(3)
+		order: 2
+		img 
+			max-width: 50vw
+	.responsible-gambling__link:first-child
+		order: 3
+		img 
+			max-width: 65.421vw
+	//end responsible-gambling style
+
+	//start download style
+	.download__buttons a:last-child 
+		margin-right: 0
+	//end downlosd style
+
+	//start video-section style
+	
+	iframe 
+		height: 50.467vw
+		border-radius: 2vw
+	//end video-section style
+
+	//start cookies style
+	.cookies 
+		padding-top: 4.673vw
+		padding-bottom: 9.346vw
+		border-radius: 8.178vw 8.178vw 0px 0px
+	.cookies__content
+		flex-direction: column
+	.cookies__text
+		font-size: 3.505vw
+		width: 100%
+	.cookies__buttons
+		margin: 0 auto
+		margin-top: 9.346vw
+		width: 58.879vw
+		justify-content: space-between
+
+	.cookies__button
+		margin-left: 0
+		width: 24.766vw
+		height: 7.944vw
+		border-radius: 2.336vw
+		font-size: 3.738vw
+	//end cookies style
+
+	//start modal style
+	.modal-buttons
+		flex-direction: column
+		a:first-child 
+			margin-bottom: 5.607vw
+	.modal__title,
+	.modal__sub-title
+		font-size: 5.841vw
+	.modal__content
+		padding: 9.346vw
+	.modal-buttons
+		img 
+			max-width: 49.533vw
+	//end modal style
+
+	//start main screen page style
+	.page-main-screen
+		height: 42.523vw
+	.page-main-screen--how-to-play
+		background-size: 160%
+		background-position: top right -50vw
+
+	//end main screen page style
+
+	//start contact sctyle
+	.page-main-screen--contact
+		background-position: top left
+		background-size: 155%
+	//end contact style
+
+	//start download style
+	.download--page
+		padding-top: 21.262vw
+	.download-page__row
+		flex-wrap: wrap 
+	.download-page__col
+		width: 50%
+	.read-more
+		text-align: left
+	//end download style
+
+	.page-main-screen--sf
+		background-size: 195%
+	.page-main-screen--faq
+		background-size: 200%
+	.faq__item.active .faq__header
+		padding-bottom: 13px
+	.faq__text
+		padding-bottom: 11px
+		padding-top: 11px
+	.page-main-screen--terms
+		background-size: 160%
+		background-position: top left -4vw
+	.page-main-screen--privacy
+		background-size: 140%
+	
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+	//start global style 
+	.h2 
+		font-size: 5.841vw
+	//end global style
+
+	//start header style 
+	.login-button.button-grey
+		font-size: 4.206vw
+	.button
+		width: 49.533vw
+		height: 9.813vw
+		font-size: 4.673vw
+		border-radius: 2.336vw
+	.logo
+		margin-top: 2.336vw
+	.slider__item
+		padding-top: 115vw
+		padding-bottom: 16vw
+	.slider__item--first
+		background-size: 250vw 
+		background-position: top right -80vw
+	.slider__item--second
+		background-size: 290vw
+		background-position: top -18vw right -35vw
+	.main-screen__content
+		padding-top: 7vw
+	.slick-dots
+		li 
+			button 
+				width: 3.271vw 
+				height: 3.271vw 
+				padding: 0
+	//end header style
+
+	//start download style
+	.download__buttons
+		flex-direction: column
+		align-items: center
+		a 
+			margin-right: 0
+			margin-top: 5.607vw
+			img 
+				width: 49.533vw
+	.download__text
+		font-size: 4.206vw
+		text-align: center
+		padding-top: 3.271vw
+		padding-bottom: 9.346vw
+	.download
+		.h2 
+			text-align: center
+			margin-bottom: 3.271vw
+	.video-slider-wrapper
+		margin-top: 18.692vw
+
+	//end download style
+
+	//start get-started style
+	.get-started__row
+		align-items: center
+		text-align: center
+	.get-started__buttons
+		margin-top: 9.346vw
+		flex-direction: column
+		.button-grey
+			margin-left: 0
+			margin-top: 5.607vw
+	.button-grey
+		width: 49.533vw
+		height: 9.813vw
+		font-size: 4.673vw
+		border-radius: 2.336vw
+	.get-startes__title
+		font-size: 5.841vw
+	.get-started__text
+		font-size: 4.673vw
+	//end get started style 
+
+	//start footer style 
+	.footer__logo
+		margin-bottom: 9.346vw
+		img 
+			max-width: 39.486vw
+	.footer-menu__link
+		padding: 2.804vw 0
+		font-size: 4.206vw
+	.footer__social
+		justify-content: space-between
+		margin: 9.346vw 0
+		a 
+			margin: 0
+			img 
+				width: 11.682vw
+	.footer__text
+		margin-bottom: 9.346vw
+		font-size: 2.804vw
+	.footer__copy
+		font-size: 3.271vw
+		margin-bottom: 9.346vw
+	//end footer style
+
+	//start how to play style
+	.how-to-play__item
+		font-size: 4.673vw
+		padding-top: 9.346vw
+		padding-bottom: 9.346vw
+
+	//start contact style
+	.contact-item
+		font-size: 4.206vw
+	.contact-item:last-child 
+		margin-bottom: 0
+	.contact-us__sub-title,
+	.form
+		font-size: 4.673vw
+	.contact-us__sub-title
+		padding-top: 9.346vw
+		padding-bottom: 5.607vw
+	.form__footer 
+		justify-content: center
+		margin-bottom: 9.346vw
+	.modal-window--thank-you .modal__content
+		padding-left: 0 
+		padding-right: 0 
+		min-height: auto
+	.modal__text
+		font-size: 5.841vw
+		margin-top: 5.607vw
+	.modal__icon
+		max-width: 14.019vw
+		margin-bottom: 9.346vw
+
+	//end contact style
+
+	//start download style
+	.download__sub-title
+		font-size: 5.841vw
+		text-align: center
+	.download-page-item
+		font-size: 4.673vw
+	.download-page__info
+		font-size: 3.505vw
+	.read-more
+		font-size: 2.804vw
+	
+	//end download style
+
+	//sf
+	.sf 
+		.h2 
+			margin-bottom: 9.346vw
+	.sf__item
+		font-size: 4.673vw
+
+	//end sf
+
+	.faq__item
+		font-size: 3.505vw
+
+
+
+	
+
+
+
+	
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
+
+
+
+
