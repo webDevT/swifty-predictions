@@ -62,9 +62,7 @@ $('.video-slider').slick({
 //end slider intit
 
 //start cookies fadeOut
-$('.cookies__button').click(function() {
-  $('.cookies').fadeOut();
-})
+
 //end cookies fadeOut
 
 //start modal
@@ -84,10 +82,10 @@ jQuery(function($){
     }
   });
 });
-$('.submit-button').click(function(){
-   event.preventDefault();
-  $('.modal-window--thank-you').fadeIn();
-})
+// $('.submit-button').click(function(){
+//    //event.preventDefault();
+//   $('.modal-window--thank-you').fadeIn();
+// })
 //end modal
 
 //start read more button
@@ -107,3 +105,15 @@ $('.faq__header').click(function(){
 
 
 });
+
+
+if (!$.cookie('alert')) {
+    $( ".cookies" ).show();
+    $(".cookies__button").click(function() {
+        $( ".cookies" ).slideUp( "slow" );
+        // set the cookie for 24 hours
+        var date = new Date();
+        date.setTime(date.getTime() + 24 * 60 * 60 * 1000); 
+        $.cookie('alert', true, { expires: date });
+    });
+}

@@ -63,22 +63,22 @@
 				For all your inquiries, Please contact us using the form below.
 			</div>
 
-			<form action="" class="form">
-				<input type="text" class="input input--name" placeholder="Full Name">
-				<input type="text" class="input input--mail" placeholder="Email Address">
-				<div class="select-wrapper">
-					<select name="" id="" class="select">
-					<option value="">Select a topic</option>
-					<option value="">Dispute</option>
-					<option value="">Feedback</option>
-					<option value="">Opinion</option>
-					<option value="">Rating</option>
-					<option value="">Lorem ipsum</option>
-					<option value="">Lorem ipsum</option>
+			<form action="" class="form" id="form">
+				<input type="text" class="input input--name" placeholder="Full Name" id="firstName" required="">
+				<input type="email" class="input input--mail" id="emaol" placeholder="Email Address" required="">
+				<div class="select-wrapper" >
+					<select name="" id="" class="select" required>
+					<option selected disabled value=''>Select a topic</option>
+					<option value="1">Dispute</option>
+					<option value="2">Feedback</option>
+					<option value="3">Opinion</option>
+					<option value="4">Rating</option>
+					<option value="5">Lorem ipsum</option>
+					<option value="6">Lorem ipsum</option>
 				</select>
 				</div>
 				
-				<textarea name="" id="" cols="30" rows="10" class="textarea" placeholder="Leave a message"></textarea>
+				<textarea name="" id="" cols="30" rows="10" class="textarea" placeholder="Leave a message" required=""></textarea>
 
 				<div class="contact__items">
 					<a href="tel:+4402045424511" class="contact-item">
