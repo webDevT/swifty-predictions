@@ -106,12 +106,10 @@ $('.faq__header').click(function(){
 
 });
 
-
 if (!$.cookie('alert')) {
     $( ".cookies" ).show();
     $(".cookies__button").click(function() {
-        $( ".cookies" ).slideUp( "slow" );
-        // set the cookie for 24 hours
+        $( ".cookies" ).fadeOut( "slow" );
         var date = new Date();
         date.setTime(date.getTime() + 24 * 60 * 60 * 1000); 
         $.cookie('alert', true, { expires: date });
